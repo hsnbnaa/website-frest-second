@@ -1,0 +1,27 @@
+.text-stroke {
+  -webkit-text-stroke: 3px black; /* Menentukan ketebalan dan warna stroke */
+}
+
+.text-stroke-blue {
+  -webkit-text-stroke: 4px #241246;
+}
+
+.text-stroke-little {
+  -webkit-text-stroke: 3px black;
+}
+
+.moving-text {
+  display: flex;
+  justify-content: space-between;
+  animation: move-text 30s linear infinite; /* Durasi dan jenis animasi */
+  white-space: nowrap; /* Agar teks tidak terputus di baris baru */
+}
+
+@keyframes move-text {
+  0% {
+    transform: translateX(100%); /* Mulai dari luar kanan */
+  }
+  100% {
+    transform: translateX(-100%); /* Bergerak ke kiri sampai keluar */
+  }
+}
